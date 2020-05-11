@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game">
+
+
+    <TextView
+    android:id="@+id/tv_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:text="GUESS THE NAME OF BRAND"/>
+
+    <TextView
+        android:id="@+id/tv_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tv_info"
+        android:text=""/>
+
+    <EditText
+        android:id="@+id/et_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_guess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="brand"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_guess"
+        android:layout_centerHorizontal="true"
+        android:text="CHECK"
+        android:onClick="guessgame"/>
+
+    <Button
+        android:id="@+id/hint1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/check"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="30dp"
+    android:text="HINT 1."
+        android:onClick="notify1"/>
+
+    <Button
+        android:id="@+id/hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="HINT 2."
+        android:onClick="notify2"/>
+    <Button
+        android:id="@+id/hint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint2"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="HINT 3."
+        android:onClick="notify3"/>
+
+    <TextView
+        android:id="@+id/mrunal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hint1"
+        android:layout_below="@+id/check"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="200dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/isa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hint2"
+        android:layout_below="@+id/hint1"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="200dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/loser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hint3"
+        android:layout_below="@+id/hint2"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="200dp"
+        android:text=""/>
+
+
+
+
+</RelativeLayout>
